@@ -29,8 +29,8 @@ const getCubicBezierPoint = (
 export const usePerfectCursor = (targetPoint: Point): Point => {
   const [point, setPoint] = useState(targetPoint);
   const previousPoint = useRef(targetPoint);
-  const requestRef = useRef<number>();
-  const startTimeRef = useRef<number>();
+  const requestRef = useRef<number | undefined>(undefined);
+  const startTimeRef = useRef<number | undefined>(undefined);
   const startPointRef = useRef(targetPoint);
   // Control points for the curve
   const controlPointsRef = useRef<{ p1: Point; p2: Point } | null>(null);

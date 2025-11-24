@@ -5,6 +5,7 @@ import {
   ShapeElement,
   Tool,
   LineElement,
+  MermaidElement,
 } from "../../types";
 import { LiaEraserSolid } from "react-icons/lia";
 import { getElementBounds } from "../utils";
@@ -280,7 +281,9 @@ export const Whiteboard = forwardRef<SVGSVGElement, WhiteboardProps>(
     const colors = Array.from(
       new Set(
         elements
-          .filter((el) => el.type === "line" && el.tool === "arrow")
+          .filter(
+            (el): el is LineElement => el.type === "line" && el.tool === "arrow"
+          )
           .map((el) => el.color)
       )
     );
