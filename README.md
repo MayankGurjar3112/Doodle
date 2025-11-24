@@ -1,7 +1,5 @@
 # Doodle
 
-![Doodle Banner](https://i.ibb.co/Bvs7BHD/Banner.png)
-
 **Doodle** is a modern, real-time collaboration platform designed to empower teams with seamless whiteboard interactions, video conferencing, and AI-driven tools. Built with the latest web technologies, Doodle offers a premium experience for brainstorming, planning, and executing ideas together.
 
 ## 🚀 Features
