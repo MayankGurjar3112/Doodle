@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState, useCallback, useRef, useMemo } from "react";
 import { db, auth } from "@/lib/firebase";
 import {
@@ -67,8 +68,6 @@ export const useRoom = (
     });
     return () => unsubscribe();
   }, []);
-
-  // ... (rest of the file)
 
   // Sync Elements
   useEffect(() => {
